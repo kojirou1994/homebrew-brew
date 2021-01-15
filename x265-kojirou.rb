@@ -2,7 +2,6 @@ class X265Kojirou < Formula
   desc "H.265/HEVC encoder"
   homepage "https://bitbucket.org/multicoreware/x265_git"
   license "GPL-2.0-only"
-  revision 1
   head "https://bitbucket.org/multicoreware/x265_git.git", :tag => "3.4"
 
   livecheck do
