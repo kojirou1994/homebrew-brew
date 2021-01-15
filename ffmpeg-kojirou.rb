@@ -59,6 +59,12 @@ class FfmpegKojirou < Formula
   depends_on "xz"
   depends_on "zeromq"
   depends_on "zimg"
+  depends_on "libgsm"
+  depends_on "libmodplug"
+  depends_on "openh264"
+  depends_on "two-lame"
+  depends_on "libvmaf"
+  depends_on "wavpack"
 
   uses_from_macos "bzip2"
   uses_from_macos "libxml2"
@@ -114,6 +120,13 @@ class FfmpegKojirou < Formula
       --enable-vapoursynth
       --disable-libjack
       --disable-indev=jack
+      --enable-libgsm
+      --enable-libmodplug
+      --enable-libopenh264
+      --enable-libtwolame
+      --enable-libvmaf
+      --enable-libwavpack
+      --extra-version=kojirou
     ]
 
     args << "--enable-audiotoolbox" if OS.mac?
