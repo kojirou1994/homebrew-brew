@@ -64,6 +64,7 @@ class FfmpegKojirou < Formula
   depends_on "two-lame"
   depends_on "libvmaf"
   depends_on "wavpack"
+  depends_on "libaribb24-kojirou"
 
   uses_from_macos "bzip2"
   uses_from_macos "libxml2"
@@ -125,6 +126,7 @@ class FfmpegKojirou < Formula
       --enable-libtwolame
       --enable-libvmaf
       --enable-libwavpack
+      --enable-libaribb24
       --extra-version=kojirou
     ]
 
