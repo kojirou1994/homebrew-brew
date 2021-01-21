@@ -65,12 +65,15 @@ class FfmpegKojirou < Formula
   depends_on "libvmaf"
   depends_on "wavpack"
   depends_on "libaribb24-kojirou"
+  depends_on "fdk-aac"
 
   uses_from_macos "bzip2"
   uses_from_macos "libxml2"
   uses_from_macos "zlib"
 
   depends_on "libxv" unless OS.mac?
+
+  conflicts_with "ffmpeg", because: "this is enhanced ffmpeg"
 
   def install
     args = %W[
@@ -127,6 +130,8 @@ class FfmpegKojirou < Formula
       --enable-libvmaf
       --enable-libwavpack
       --enable-libaribb24
+      --enable-libfdk-aac
+      --enable-nonfree
       --extra-version=kojirou
     ]
 

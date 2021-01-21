@@ -2,7 +2,7 @@ class X265Kojirou < Formula
   desc "H.265/HEVC encoder"
   homepage "https://bitbucket.org/multicoreware/x265_git"
   license "GPL-2.0-only"
-  head "https://bitbucket.org/multicoreware/x265_git.git", :tag => "3.4"
+  url "https://bitbucket.org/multicoreware/x265_git.git", tag: "3.4"
 
   livecheck do
     url :stable
@@ -10,6 +10,8 @@ class X265Kojirou < Formula
 
   depends_on "cmake" => :build
   depends_on "nasm" => :build if Hardware::CPU.intel?
+
+  conflicts_with "x265", because: "this is fixed x265"
 
   def install
     # Build based off the script at ./build/linux/multilib.sh
