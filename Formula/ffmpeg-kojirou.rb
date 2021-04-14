@@ -56,7 +56,6 @@ class FfmpegKojirou < Formula
   depends_on "openh264"
   depends_on "two-lame"
   depends_on "libvmaf"
-  depends_on "wavpack"
   depends_on "libaribb24-kojirou"
   depends_on "fdk-aac"
 
@@ -121,7 +120,6 @@ class FfmpegKojirou < Formula
       --enable-libopenh264
       --enable-libtwolame
       --enable-libvmaf
-      --enable-libwavpack
       --enable-libaribb24
       --enable-libfdk-aac
       --enable-nonfree
