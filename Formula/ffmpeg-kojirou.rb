@@ -8,7 +8,7 @@ class FfmpegKojirou < Formula
 
   stable do
     url "https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz"
-    sha256 "46e4e64f1dd0233cbc0934b9f1c0da676008cad34725113fb7f802cfa84ccddb"
+    sha256 "06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909"
   end
 
   livecheck do
