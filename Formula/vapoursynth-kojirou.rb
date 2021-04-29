@@ -7,6 +7,7 @@ class VapoursynthKojirou < Formula
   depends_on "automake" => :build
   depends_on "cython" => :build
   depends_on "libtool" => :build
+  depends_on "m4" => :build
   depends_on "nasm" => :build
   depends_on "pkg-config" => :build
   depends_on "python@3.9"
