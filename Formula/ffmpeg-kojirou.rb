@@ -43,7 +43,7 @@ class FfmpegKojirou < Formula
   depends_on "srt"
   depends_on "tesseract"
   depends_on "theora"
-  depends_on "vapoursynth"
+  depends_on "vapoursynth-kojirou"
   depends_on "webp"
   depends_on "x264"
   depends_on "x265-kojirou"
